@@ -1,4 +1,4 @@
-# ## JCH - Jump Consistent Hash Extension for PHP7
+## JCH - Jump Consistent Hash Library for Javascript in Deno.
 
 A Fast, Minimal Memory, Consistent Hash Algorithm.
 
