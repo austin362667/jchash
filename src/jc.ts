@@ -1,4 +1,4 @@
-import * as R from "./rand.ts"
+import * as R from "../src/rand.ts"
 
 
 // The JS native random function cannot ser seed.
