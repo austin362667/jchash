@@ -3,6 +3,8 @@ var m_z = 987654321;
 var mask = 0xffffffff;
 
 // https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript
+// https://stackoverflow.com/questions/424292/seedable-javascript-random-number-generator
+
 // Takes any integer
 export function seed(i:any) {
     m_w = (123456789 + i) & mask;
