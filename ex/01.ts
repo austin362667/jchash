@@ -9,8 +9,8 @@ function getRandomInt(min:number, max:number) {
 
 let buckets:Map<number, number> =new Map()
 let count = 10
-  for (var i = 0; i < 72000; i++ ){
-    const n = getRandomInt(2**0, 2**64)
+  for (var i = 0; i < 75000; i++ ){
+    const n = i//getRandomInt(2**0, 2**64)
     let b = JCH.ch(n, count)
     const tmp = buckets.get(b)
 if (tmp !== undefined){
@@ -22,8 +22,8 @@ if (tmp !== undefined){
 console.log("buckets: ")
 console.table(buckets)
 // add two new buckets
-for (var i = 0; i < 72000; i++ ){
-  const n = getRandomInt(2**0, 2**64)
+for (var i = 0; i < 75000; i++ ){
+  const n = i//getRandomInt(2**0, 2**64)
   let oldBucket = JCH.ch(n, count)
   let newBucket = JCH.ch(n, count+2)
   // if need, move data from oldBucket to newBucket.

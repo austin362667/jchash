@@ -1,7 +1,7 @@
 import * as R from "../src/rand.ts"
 
 
-// The JS native random function cannot ser seed.
+// The JS native random function cannot set seed.
 // So, I have implemented some other pseudo random generator.
 
 // function jch1(key:any, m:number) {
